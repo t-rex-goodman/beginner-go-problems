@@ -1,4 +1,12 @@
+/* ---------------------------------- */
+/* fonts                              */
+/* ---------------------------------- */
+
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700|Share+Tech+Mono&display=swap");
+
+/* ---------------------------------- */
+/* site wide                          */
+/* ---------------------------------- */
 
 .container {
   max-width: 960px;
@@ -10,6 +18,13 @@
   height: 2rem;
 }
 
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .title-section {
   display: flex;
   align-items: center;
@@ -19,31 +34,17 @@
   margin-bottom: 3em;
 }
 
-.title-section-problems {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "Share Tech Mono";
-  margin-bottom: 2em;
+a.header-link {
+  color: #363636;
 }
+
+/* ---------------------------------- */
+/* landing page                       */
+/* ---------------------------------- */
 
 .main-image {
   border-radius: 9px;
   margin: 5rem 5rem;
-}
-
-.main-buttons {
-  width: 200px;
-  margin: 0 2em;
-  font-family: "Lato";
-  border: 2px solid #39f069;
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-delay: 3s;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 .short-pitch {
@@ -61,8 +62,17 @@
   animation-fill-mode: forwards;
 }
 
-a.header-link {
-  color: #363636;
+.main-buttons {
+  width: 200px;
+  margin: 0 2em;
+  font-family: "Lato";
+  border: 2px solid #39f069;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .buttons-section {
@@ -72,12 +82,20 @@ a.header-link {
   flex-direction: row;
 }
 
+/* ---------------------------------- */
+/* about page                         */
+/* ---------------------------------- */
+
 .big-red-box {
   font-family: "Lato";
   padding: 1em;
   border: 2px solid #ff0000;
   border-radius: 9px;
 }
+
+/* ---------------------------------- */
+/* problem list                       */
+/* ---------------------------------- */
 
 .problem-link {
   width: 170px;
@@ -94,13 +112,6 @@ a.header-link {
   border: 1px solid #dbdbdb;
 }
 
-.flex-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
 .pagination-link.is-current {
   background-color: #61f387; /* 80% tint */
   border-color: #61f387; /* 80% tint */
@@ -113,10 +124,21 @@ a.header-link {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* font-family: "Lato"; */
-  /* font-family: "Montserrat"; */
   font-family: "Share Tech Mono";
   margin-bottom: 3rem;
+}
+
+/* ---------------------------------- */
+/* problems                           */
+/* ---------------------------------- */
+
+.title-section-problems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Share Tech Mono";
+  margin-bottom: 2em;
 }
 
 .setup {
@@ -124,7 +146,6 @@ a.header-link {
   border-radius: 9px;
   font-family: "Share Tech Mono";
   font-size: 18px;
-  /* height: 120px; */
   min-height: 20px;
   max-height: 270px;
   padding: 0.5em 0.7em 0.5em 0.7em;
@@ -155,6 +176,10 @@ a.header-link {
   overflow-y: scroll;
 }
 
+.commentary-container {
+  height: 70vh;
+}
+
 .section-name {
   font-size: 20px;
   color: #363636;
@@ -172,10 +197,6 @@ a.header-link {
   color: #ffffff;
   font-family: "Lato";
   /* font-family: "Montserrat"; */
-}
-
-.commentary-container {
-  height: 70vh;
 }
 
 .reveal-solution {
@@ -229,11 +250,18 @@ a.header-link {
   animation-fill-mode: forwards;
 }
 
+/* ---------------------------------- */
+/* board                              */
+/* ---------------------------------- */
+
 #controls-wrapper {
   opacity: 0.1;
 }
 
-/* animations */
+/* ---------------------------------- */
+/* animations                         */
+/* ---------------------------------- */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
