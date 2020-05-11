@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700|Share+Tech+Mono&display=swap");
 
 .container {
   max-width: 960px;
@@ -15,8 +15,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* font-family: "Lato"; */
-  /* font-family: "Montserrat"; */
   font-family: "Share Tech Mono";
   margin-bottom: 3em;
 }
@@ -203,7 +201,7 @@ a.header-link {
 .reveal-controls {
   opacity: 1;
   animation-name: fadeInControls;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
