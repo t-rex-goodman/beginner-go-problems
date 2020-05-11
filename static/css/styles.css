@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Share+Tech+Mono&display=swap");
+
+.container {
+  max-width: 960px;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  height: 2rem;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* font-family: "Lato"; */
+  /* font-family: "Montserrat"; */
+  font-family: "Share Tech Mono";
+  margin-bottom: 3em;
+}
+
+.title-section-problems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Share Tech Mono";
+  margin-bottom: 2em;
+}
+
+.main-image {
+  border-radius: 9px;
+  margin: 5rem 5rem;
+}
+
+.main-buttons {
+  width: 200px;
+  margin: 0 2em;
+  font-family: "Lato";
+  border: 2px solid #39f069;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.short-pitch {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  border-top: 1px solid #ababab;
+  margin: 1em 0 1em 0;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+a.header-link {
+  color: #363636;
+}
+
+.buttons-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.big-red-box {
+  font-family: "Lato";
+  padding: 1em;
+  border: 2px solid #ff0000;
+  border-radius: 9px;
+}
+
+.problem-link {
+  width: 170px;
+  margin: 0.5em 0em;
+  font-family: "Lato";
+  /* border: 1px solid #39f069; */
+}
+
+.problem-link:hover {
+  border: 2px solid #39f069;
+}
+
+.problem-link[disabled]:hover {
+  border: 1px solid #dbdbdb;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pagination-link.is-current {
+  background-color: #61f387; /* 80% tint */
+  border-color: #61f387; /* 80% tint */
+  /* background-color: #39f069; */ /* theme colour */
+  /* border-color: #39f069; */ /* theme colour */
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* font-family: "Lato"; */
+  /* font-family: "Montserrat"; */
+  font-family: "Share Tech Mono";
+  margin-bottom: 3rem;
+}
+
+.setup {
+  border: 2px solid #363636;
+  border-radius: 9px;
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  /* height: 120px; */
+  min-height: 20px;
+  max-height: 270px;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  margin-bottom: 1rem;
+}
+
+.solution {
+  border: 2px solid #363636;
+  border-radius: 9px;
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  height: 18vh;
+  min-height: 20px;
+  max-height: 100px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.commentary {
+  border: 2px solid #363636;
+  border-radius: 9px;
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  height: 40vh;
+  min-height: 20px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  overflow-y: scroll;
+}
+
+.section-name {
+  font-size: 20px;
+  color: #363636;
+  margin-bottom: 0.25rem;
+}
+
+.small-font {
+  font-size: 16px;
+  font-family: "Lato";
+  /* font-family: "Montserrat"; */
+}
+
+.small-font-hidden {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Lato";
+  /* font-family: "Montserrat"; */
+}
+
+.commentary-container {
+  height: 70vh;
+}
+
+.reveal-solution {
+  opacity: 0;
+  color: rgb(74, 74, 74);
+  animation-name: fadeIn;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.reveal-commentary {
+  opacity: 0;
+  color: rgb(74, 74, 74);
+  animation-name: fadeIn;
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.reveal-controls {
+  opacity: 1;
+  animation-name: fadeInControls;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.reveal-button {
+  font-family: "Share Tech Mono";
+  font-size: 14px !important;
+  /* border: 1px solid #39f069;
+  color: #39f069; */
+  border-radius: 9px !important;
+  width: 100px;
+  max-height: 30px;
+}
+
+.reveal-button:hover {
+  border: 2px solid #39f069;
+}
+
+.conceal {
+  color: rgb(74, 74, 74);
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#controls-wrapper {
+  opacity: 0.1;
+}
+
+/* animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInControls {
+  0% {
+    opacity: 0.1;
+    /* opacity: 0; */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
