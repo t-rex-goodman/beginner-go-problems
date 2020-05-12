@@ -18,7 +18,7 @@
     <script>
       function revealSolution() {
         // reveal solution and controls
-        document.getElementById("solution").classList.add("reveal-solution")
+        document.getElementById("solution-text").classList.add("reveal-solution")
         document.getElementById("controls-wrapper").classList.add("reveal-controls")
 
         // conceal button
@@ -34,10 +34,11 @@
       }
 
       function revealCommentary() {
-        document.getElementById("commentary").classList.add("reveal-commentary")
+        document.getElementById("commentary-text").classList.add("reveal-commentary")
         document.getElementById("commentary-button").classList.add("conceal")
       }
     </script>
+    <script type="text/javascript" src="../../assets/data/problem1.js"></script>
   </head>
 
   <body>
@@ -52,13 +53,11 @@
           >
         </h1>
         <h3 class="subtitle is-4">
-          <a class="header-link" href="../problem-list.html">
+          <a id="previous-problem" class="header-link" href="../problem-list.html">
             &#x2190; &nbsp; &nbsp;
           </a>
-          <a class="header-link" href="../problem-list.html">
-            Problem 1
-          </a>
-          <a class="header-link" href="problem2.html">
+          <a id="problem-number" class="header-link" href="../problem-list.html"></a>
+          <a id="next-problem" class="header-link" href="">
             &nbsp; &nbsp; &#x2192;
           </a>
         </h3>
@@ -68,7 +67,8 @@
         <div class="column is-three-fifths">
           <div class="board-container">
             <div
-              data-wgo="(;GM[1]FF[4]CA[UTF-8]AP[GOBAN:1]SZ[9];AB[dg][ef][fg]AW[eg][ff][gf]TR[eg];LB[eh:A];B[eh])"
+              id="board-data-div"
+              data-wgo=""
               data-wgo-move="1"
               data-wgo-layout="bottom: ['Control']"
             >
@@ -81,8 +81,8 @@
           <div class="commentary-container">
             <div class="setup">
               <p class="section-name">Setup</p>
-              <p class="small-font">
-                How can black capture the white stone △?
+              <p id="setup-text" class="small-font">
+                Not done yet.
               </p>
             </div>
 
@@ -107,9 +107,7 @@
                   Show
                 </button>
               </div>
-              <p id="solution" class="small-font-hidden">
-                Black plays at A (5-8).
-              </p>
+              <p id="solution-text" class="small-font-hidden"></p>
             </div>
 
             <div class="commentary">
@@ -132,13 +130,21 @@
                   Show
                 </button>
               </div>
-              <p id="commentary" class="small-font-hidden">
-                This is the only move that captures the white stone.
-              </p>
+              <p id="commentary-text" class="small-font-hidden"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById("problem-number").innerText = "Problem " + problemData.problemNumber
+      document
+        .getElementById("next-problem")
+        .setAttribute("href", "problem" + (problemData.problemNumber + 1) + ".html")
+      document.getElementById("board-data-div").setAttribute("data-wgo", problemData.sgf)
+      document.getElementById("setup-text").innerText = problemData.setup
+      document.getElementById("solution-text").innerText = problemData.solution
+      document.getElementById("commentary-text").innerText = problemData.commentary
+    </script>
   </body>
 </html>
